@@ -1,0 +1,79 @@
+.game-container {
+  width: 100vw; /* Full screen width */
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Variants */
+.bg-apuseni {
+  background-image: url("/images/background-apuseni.jpg");
+}
+
+.bg-balea {
+  background-image: url("/images/background-balea.jpg");
+}
+
+.bg-transfagarasan {
+  background-image: url("/images/background-transfagarasan.jpg");
+}
+
+.game-area {
+  width: 80vw; /* Makes game area take 80% of the screen width */
+  height: 60vh; /* Makes game area take 60% of the screen height */
+  position: relative;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+}
+
+.ochi {
+  width: 80px; /* Reduced from 80px to 50px */
+  height: auto;
+  position: absolute;
+}
+
+.ground {
+  width: 100%;
+  height: 7vh;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  border-top: 5px solid darkgreen;
+}
+
+.platform {
+  position: absolute;
+  height: 10px;
+  background-color: brown;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+/* Sound Indicator */
+.sound-indicator {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
