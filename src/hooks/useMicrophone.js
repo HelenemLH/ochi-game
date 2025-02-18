@@ -49,7 +49,7 @@ const useMicrophone = () => {
 
         console.log("Detected sound:", labels[highestIndex]); // Debugging output
       },
-      { probabilityThreshold: 0.75 }
+      { probabilityThreshold: 0.85 }
     );
 
     setIsListening(true);
